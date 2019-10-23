@@ -1,0 +1,433 @@
+* {
+  padding:0;
+  margin: 0;
+  /*box-sizing: border-box;*/
+  max-width: 114rem;
+}
+body {
+  font-family: 'Oswald', sans-serif;
+}
+header {
+  height: 95vh;
+}
+.crossfade > figure {
+  animation: imageAnimation 15s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  height: 95vh;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+}
+.crossfade > figure:nth-child(1) { background-image: linear-gradient(to right bottom,rgba(255, 255, 255, 0.608),rgba(225, 225, 225, 0.201)),url('https://images.unsplash.com/photo-1474169482634-9d0381a70510?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80'); }
+.crossfade > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: linear-gradient(to right bottom,rgba(255, 255, 255, 0.608),rgba(225, 255, 255, 0.201)),url('https://images.unsplash.com/photo-1551190910-5960b5c75387?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+}
+.crossfade > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: linear-gradient(to right bottom,rgba(255, 255, 255, 0.608),rgba(225, 225, 225, 0.201)),url("https://images.unsplash.com/photo-1522111608460-19e7331e00fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+}
+@keyframes
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
+}
+nav {
+  background-image:linear-gradient(to right bottom,rgba(366, 113, 111, 0.808),rgba(140, 20, 193, 0.801)),url("https://images.unsplash.com/photo-1489899970544-175fdcc08b8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-position: center;
+  background-size: cover;
+  position: sticky;
+  padding: 10px;
+}
+
+ul li  {
+  display: inline;
+  text-decoration: none;
+  padding: 20px;
+}
+ul {
+  text-align: right;
+  margin-top: -30px;
+  position: sticky;
+}
+a {
+  text-decoration: none;
+  color: black;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+.logo {
+  font-size: 34px;
+  color: white;
+  text-decoration:line-through;
+  margin-left: 15px;
+  position: sticky;
+}
+
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    }
+
+.heading-primary{
+    color: black;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: ;
+  }
+.heading-primary-main {
+  display: block;
+  font-size: 45px;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 15px;
+    animation: moveInRight 1s ease-out;
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+.im {
+  margin-left: 40px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 300px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  margin-left: 50px;
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #F433AB;
+  color: black;
+  transform: rotateY(180deg);
+}
+.brief {
+font-size: 50px;
+text-align: center;
+}
+.meet {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+}
+.coolumn {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.roow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.roow {
+  margin-top: 90px;
+  background-image:linear-gradient(to right bottom,rgba(126, 213, 111, 0.808),rgba(40, 180, 133, 0.801)),url("https://images.unsplash.com/photo-1533029764620-40021530b1aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon( 0% 0% ,100% 0%,100% 55vh, 0% 100%);
+  position: relative;
+}
+.atli {
+  height: 500px;
+  width: 350px;
+  margin-left: 200px;
+}
+.mm {
+  font-family: 'Oswald', sans-serif;
+}
+.history{
+  margin-top: 60px;
+  font-size: 30px;
+}
+.historyy{
+  width: 500px;
+  font-family: 'Nunito', sans-serif;
+}
+.pro {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+}
+.proo {
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    margin-left: 30%;
+    font-family: 'Nunito', sans-serif;
+
+}
+.procolumn {
+  float: left;
+  width: 33.33%;
+}
+/* Clear floats after the columns */
+.prorow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.prorow {
+  background-color: #FCEFEF;
+}
+.dd {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+#GALLERY{
+  margin-top: -20px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1024px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: plum;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.sl {
+  margin-left: 25%;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.columnnnnnn {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.rowsssss:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.speakersection {
+  width: 90%;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+.columnnnnnnn {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.rowssssss:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.bloggersection{
+  width: 90%;
+  margin-bottom: 25px;
+  margin-left:30px;
+  margin-top: 50px;
+}
+.speaker{
+  color: black;
+  text-align: center;
+  font-size: 40px;
+}
+.blog {
+  text-align: center;
+  font-size: 40px;
+}
+#projects2{
+  background-image:linear-gradient(to right bottom,rgba(126, 213, 1, 0.808),rgba(40, 150, 250, 0.801)),url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&auto=format&fit=crop&w=541&q=80");
+  background-size: cover;
+  background-position: center;
+}
+Footer {
+  background-image:linear-gradient(to right bottom,rgba(366, 113, 111, 0.808),rgba(140, 20, 193, 0.801)),url("https://images.unsplash.com/photo-1489899970544-175fdcc08b8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+}
+.f {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+}
+.ff {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+.fa {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #D90368;
+  color: white;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #DF3B57; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #9D75CB;
+}
